@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { DM_Sans, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const display = Playfair_Display({ subsets: ["latin"], variable: "--font-display", display: "swap" });
+const inter = DM_Sans({ subsets: ["latin"], variable: "--font-body", display: "swap" });
+const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Camila Ferreira · Conceito de site | Demonstração não oficial",
-  description: "Proposta visual independente por Phelipe para Estética Camila Ferreira, em Niterói. Demonstração não oficial, com fotografia ilustrativa.",
+  description: "Proposta independente por Phelipe para Estética Camila Ferreira, Niterói. Demonstração não oficial com serviços e canais públicos da empresa.",
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
-  openGraph: { title: "Um novo olhar para o autocuidado · Prévia não oficial", description: "Conceito de site por Phelipe. Fotografia ilustrativa; sem vínculo com a clínica.", locale: "pt_BR", type: "website" },
+  openGraph: { title: "Camila Ferreira — Um tempo só seu. Prévia não oficial", description: "Conceito independente por Phelipe. Sem vínculo ou aprovação da clínica.", locale: "pt_BR", type: "website" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
